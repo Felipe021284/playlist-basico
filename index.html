@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    
+        <!--meta charset="UTF-8">
+        <meta name="veiwport" content="width=device-width, initial scale=1.0">
+        <meta http-equiv="X-UA-compatible" content="ie=edge"-->
+        <title>PLAYLIST BASICO</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+        <style>
+        
+        /* Created by Julio Garcia */
+
+/* Created by cяγѕταℓℓιиє ☆☆☆ */
+
+*, *::before, *::after{
+    margin:0;
+    padding:0%;
+    border-sizing:border-box;
+}
+
+/*funcion loading*/
+
+/*
+#except_loader{
+    display:none;
+}
+
+*/
+.main-div{
+    position: relative;
+    height:100vh;
+    width:100vw;
+    display:grid;
+    place-items:center;
+    background:black;
+}
+
+
+
+.music-container{
+    position:absolute;
+    width:50vw;
+    height:50vh;
+    background:linear-gradient(320deg,blue,red);
+    border-radius:4rem;
+    
+    
+    
+    box-shadow:0px 0px 10px 5px purple;
+    padding:3rem;
+    text-align:center;
+    justify-content:center;
+   /* border:inset;*/
+}
+.music-container #title{
+
+margin:0.5rem 0 0.5rem 0;
+    text-align:center;
+    justify-content:center;
+    text-transform:uppercase;
+    letter-spacing:0.01rem;
+    word-spacing:0.5rem;
+   /* color:red;*/
+    
+    font-size:30px;
+    font-weight:500%;
+    text-shadow:0 0.3rem 0.5rem rgba(0,0,0,0.7);
+
+animation: animate 10s infinite linear;
+}
+@keyframes animate
+{
+    0%,100%{
+        color:black;
+    }
+    25%{
+        color: red;
+    }
+    50%{
+        color:deepskyblue;
+    }
+    75%{
+        color: white;
+    }
+}
+
+
+
+
+
+
+
+.img-container{
+
+    height:25vh;
+    width:25vw;
+    margin:auto;
+}
+img{
+
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    object-fit:cover;
+    box-shadow:0 0.5rem 3rem 0.5rem rgba(0,0,0,0.9);
+    border:groove;
+}
+.music-controls{
+
+position: absolute;
+top:200px;
+    width:50vw;
+    display:flex;
+    justify-content:space-between;
+    place-items:center;
+    margin:auto;
+    margin-top:7rem;
+}
+.music-controls .fas{
+  /*  color:black;*/
+    font-size:2rem;
+    filter:drop-shadow(0 1.2rem 3rem 0.5rem rgba(0,0,0,0.4));
+
+animation: animate 10s infinite linear;
+}
+@keyframes animate
+{
+    0%,100%{
+        color:black;
+    }
+    25%{
+        color: red;
+    }
+    50%{
+        color:deepskyblue;
+    }
+    75%{
+        color: white;
+    }
+}
+
+
+
+
+
+.music-controls .main-button{
+    width:9vw;
+    height:7vh;
+    border-radius:50%;
+  /*  background-color:red;*/
+   /* color:black;*/
+    display:flex;
+    justify-content:center;
+    text-align:center;
+    place-items:center;
+    
+    animation: animate 10s infinite linear;
+
+@keyframes animate
+{
+    0%,100%{
+        color:black;
+    }
+    25%{
+        color: red;
+    }
+    50%{
+        color:deepskyblue;
+    }
+    75%{
+        color: white;
+    }
+}
+
+
+    
+    
+    
+    
+}
+.music-controls .fa-play:hover{
+    background-color:white;
+   color:white;
+    box-shadow:0 1rem 2rem 0.2rem rgba(0,0,0,0.4);
+}
+
+
+/*
+background-image: var(--gradiente);
+  
+    --gradiente: linear-gradient(to top,red,blue
+    );
+     box-shadow: 0 5px 5px rgba(0,0,0,1);
+    transform: translateY(-10px);
+}
+
+*/
+
+.anime{
+    animation:beat 3s linear infinite;
+}
+@keyframes beat{
+    0%{
+        transform:scale(1) rotate(0deg);
+        opacity:100%;
+    }
+    25%{
+        transform:scale(0.7) rotate(90deg);
+        opacity:50%;
+    }
+    50%{
+        transform:scale(1) rotate(180deg);
+        opacity:0%;
+    }
+    75%{
+        transform:scale(0.7) rotate(270deg);
+        opacity:50%;
+    }
+    100%{
+        transform:scale(1) rotate(360deg);
+        opacity:100%;
+    }
+}
+
+
+
+/*funcion loading*/
+
+/*
+.loader{
+    font-size:xx-large;
+    font-weight:bolder;
+    margin-top:50vh;
+    text-align:center;
+}
+.a{
+    animation:blink 1s linear infinite;
+    animation-delay:0.4s;
+}
+.b{
+    animation:blink 1s linear infinite;
+    animation-delay:0.8s;
+}
+.c{
+    animation:blink 1s linear infinite;
+    animation-delay:1.2s;
+}
+.d{
+    animation:blink 1s linear infinite;
+    animation-delay:1.6s;
+}
+.e{
+    animation:blink 1s linear infinite;
+    animation-delay:2s;
+}
+.f{
+    animation:blink 1s linear infinite;
+    animation-delay:2.4s;
+}
+
+@keyframes blink{
+    0%{
+        opacity:100%;
+    }
+    50%{
+        opacity:50%;
+    }
+    100%{
+        opacity:0%;
+    }
+}
+        
+            
+    */        
+            
+        </style>
+            
+        <script>
+            /*funcion loading*/
+            
+          /*  function abc(){
+    document.getElementById("except_loader").style.display = "block";
+    document.getElementById("loader").style.display ="none";
+}
+setTimeout(abc,5000)  */
+
+window.onload = function(){
+const music=document.querySelector("audio");
+const img=document.querySelector("img");
+const play=document.getElementById("play");
+const title=document.getElementById("title");
+const prev=document.getElementById("prev");
+const next=document.getElementById("next");
+
+const songs=[
+    {
+      title:"HOMENAJE MEXICANO",
+      song:"https://dl.dropbox.com/s/8vz5pwu41t7x6yt/Homenaje%20Mexicano%28MP3_320K%29.mp3?dl=0",
+      img:"https://i.ibb.co/Tr5HpnC/IMG-20220607-132154.jpg",
+    },
+    {
+      title:"HOMENAJE MACHOS",
+      
+      song:"https://dl.dropbox.com/s/lfa92jbq1x5lmc6/Homenaje%20Machos%28MP3_320K%29.mp3?dl=0", 
+      
+      img:"https://i.ibb.co/Tr5HpnC/IMG-20220607-132154.jpg",
+    },
+    {
+      title:"HOMENAJE SELENA",
+      song:"https://dl.dropbox.com/s/k7jzwdj8hxat1os/Homenaje%20Selena%28MP3_320K%29.mp3?dl=0", 
+      
+      img:"https://i.ibb.co/Tr5HpnC/IMG-20220607-132154.jpg",
+    },
+    {
+      title:"SABOR COSTERO",
+      song:"https://dl.dropbox.com/s/mzx3cuf9i6x1yhv/Sabor%20Costero%28MP3_320K%29.mp3?dl=0", 
+      img:"https://i.ibb.co/Tr5HpnC/IMG-20220607-132154.jpg",  
+    },
+    {
+      title:"HOMENAJE INVASORES",
+      
+      song:"https://dl.dropbox.com/s/9hm7pwz4iamfxcs/Homenaje%20Invasores%28MP3_320K%29.mp3?dl=0", 
+      img:"https://i.ibb.co/Tr5HpnC/IMG-20220607-132154.jpg",  
+    },
+    {
+      title:"POPURRI FITO",
+      song:"https://dl.dropbox.com/s/vj7ajkkb1yw8oy7/Popurri%20Fito%28MP3_320K%29.mp3?dl=0", 
+      img:"https://i.ibb.co/Tr5HpnC/IMG-20220607-132154.jpg",  
+    },
+    {
+        title:"LO QUE TE QUEDA",
+        song:"https://dl.dropbox.com/s/si49fptvd8c4pu6/Lo%20Que%20Te%20Queda%28MP3_320K%29.mp3?dl=0",
+        img:"https://i.ibb.co/Tr5HpnC/IMG-20220607-132154.jpg",
+    },
+    {
+        title:"AYUDAME A OLVIDAR",
+        song:"https://dl.dropbox.com/s/zl8150mvqjsp4pw/Ay%C3%BAdame%20a%20Olvidar%28MP3_320K%29.mp3?dl=0",
+        img:"https://i.ibb.co/Tr5HpnC/IMG-20220607-132154.jpg",
+    },
+    {
+        title:"COMO PUDE ENAMORARME",
+        song:"https://dl.dropbox.com/s/auyl778b9mndaug/C%C3%B3mo%20Pude%20Enamorarme%28MP3_320K%29.mp3?dl=0",
+        img:"https://i.ibb.co/Tr5HpnC/IMG-20220607-132154.jpg",
+    },
+    {
+        title:"PORQUE TE VAS",
+        song:"https://dl.dropbox.com/s/9s55r4eeaiugtr2/Porque%20Te%20Vas%28MP3_320K%29.mp3?dl=0",
+        img:"https://i.ibb.co/Tr5HpnC/IMG-20220607-132154.jpg",
+    },
+    
+    {
+        title:"LA MUCHACHA DE LOS OJOS TRISTES",
+        song:"https://dl.dropbox.com/s/drjo9c5lor9wj40/La%20Muchacha%20de%20los%20Ojos%20Tristes%28MP3_320K%29.mp3?dl=0",
+        img:"https://i.ibb.co/Tr5HpnC/IMG-20220607-132154.jpg",
+    },
+    
+    {
+        title:"DE LOS PIES A LA CABEZA",
+        song:"https://dl.dropbox.com/s/k7lflh203iif02e/De%20Pies%20a%20la%20Cabeza%28MP3_320K%29.mp3?dl=0",
+        img:"https://i.ibb.co/Tr5HpnC/IMG-20220607-132154.jpg",
+    },
+    
+    
+];
+
+let isPlaying=false;
+
+const playMusic = () => {
+     isPlaying=true;
+     music.play();
+     play.classList.replace("fa-play", "fa-pause");
+     img.classList.add("anime")
+};
+
+const pauseMusic = () => {
+     isPlaying=false;
+     music.pause();
+     play.classList.replace("fa-pause", "fa-play");
+     img.classList.remove("anime")
+};
+
+
+play.addEventListener('click', () =>{
+    isPlaying ? pauseMusic() : playMusic();
+});
+
+const loadSong = (songs) => {
+    title.textContent=songs.title;
+    music.src=songs.song+".mp3";
+    img.src=songs.img+".jpg";
+};
+
+songIndex=0;
+
+const nextSong = () => {
+    songIndex=(songIndex+1)%songs.length;
+    loadSong(songs[songIndex]);
+    playMusic();
+    /*
+    alert("Please wait, it may take some time to load the song...");*/
+}
+
+const prevSong = () => {
+    songIndex=(songIndex-1+songs.length)%songs.length;
+    loadSong(songs[songIndex]);
+    playMusic();
+    /*
+    alert("Please wait, it may take some time to load the song...");*/
+}
+
+next.addEventListener("click",nextSong);
+prev.addEventListener("click",prevSong);
+}
+            
+            
+        </script>
+        
+        
+    </head>
+    <body>
+    
+    <div id="except_loader">
+    
+    
+        <div class="main-div">
+            <div class="music-container">
+                <h2 id="title">PLAYLIST BASICO <br />TU MUSICA AQUI</h2>
+                <div class="img-container">
+                    <img src="https://i.ibb.co/Tr5HpnC/IMG-20220607-132154.jpg
+                    " id="img">
+                </div>
+                <audio src="https://dl.dropbox.com/s/8vz5pwu41t7x6yt/Homenaje%20Mexicano%28MP3_320K%29.mp3?dl=0
+                " id="song"></audio>
+                <div class="music-controls">
+                    <i class="fas fa-backward" id="prev" title="Prev"></i>
+                    <i class="fas fa-play main-button" id="play" title="Play" ></i>
+                    <i class="fas fa-forward" id="next" title="Next"></i>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        </div>
+        
+        <!-- function loading -->
+        <!--div class="loader" id="loader">
+            <span class="a">•</span>
+            <span class="b">•</span>
+            <span class="c">•</span>
+            Loading
+            <span class="d">•</span>
+            <span class="e">•</span>
+            <span class="f">•</span>
+        </div-->
+    </body>
+</html>
